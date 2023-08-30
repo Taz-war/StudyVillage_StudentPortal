@@ -184,7 +184,7 @@ const Your_profile = () => {
 
         <Box display={"flex"}>
           <Box width={"100%"} maxWidth={"850px"} pt={3}>
-            <Typography variant="p" textAlign={"left"} fontSize={"large"}>
+            <Typography variant="p" textAlign={"left"} fontSize={"large"} color={'white'}>
               We have the following information on record about you. Please keep
               this information up to date so we can stay in touch.{" "}
             </Typography>
@@ -259,7 +259,7 @@ const Your_profile = () => {
               <i>{editProfile === false ? "Edit Profile" : "Submit details"}</i>
             </Button>
 
-            <Typography variant="h5" fontWeight={"bolder"} fontStyle={'italic'} mt={3}>
+            <Typography variant="h5" fontWeight={"bolder"} fontStyle={'italic'} color={'white'} mt={3}>
               Parent/Guardian (1) details in home country
             </Typography>
             <TableContainer sx={{ mt: 3 }}>
@@ -333,7 +333,7 @@ const Your_profile = () => {
               <i>{editGuardianProfile === false ? "Edit Guardian Profile" : "Submit details"}</i>
             </Button>
 
-            <Typography variant="h5" fontWeight={"bolder"}  fontStyle={'italic'} mt={3}>
+            <Typography variant="h5" fontWeight={"bolder"} color={'white'}  fontStyle={'italic'} mt={3}>
               Parent/Guardian (2) details in home country
             </Typography>
             <TableContainer sx={{ mt: 3 }}>

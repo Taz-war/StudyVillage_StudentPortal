@@ -343,17 +343,17 @@ const Hello_Brian = () => {
         </Box>
         <Grid container columns={12} maxWidth={'1150px'} columnSpacing={2} mt={3} ml={2}>
           <Grid item md={6}>
-            <Typography variant="h5" ml={4} fontWeight={"bolder"}>
+            <Typography variant="h5" ml={4} fontWeight={"bolder"} color={'white'}>
               YOUR PROGRAM :
             </Typography>
             <Grid container columns={12} columnSpacing={2} mt={2}>
               <Grid item md={6} textAlign={'center'}>
                 <Image src={'https://i.ibb.co/1XMM44X/WheelsEC.png'} alt="" width={250} height={250}/>
-                <Typography variant="h5" textAlign={'center'} fontWeight={"bolder"} mt={2}>ELICOS</Typography>
+                <Typography variant="h5" textAlign={'center'} fontWeight={"bolder"} color={'white'} mt={2}>ELICOS</Typography>
               </Grid>
               <Grid item md={6} textAlign={'center'}>
                 <Image src={'https://i.ibb.co/NnWVThs/Wheels6.png'} alt="" width={250} height={250}/>
-                <Typography variant="h5" textAlign={'center'} fontWeight={"bolder"} mt={2}>AWARD</Typography>
+                <Typography variant="h5" textAlign={'center'} fontWeight={"bolder"} color={'white'} mt={2}>AWARD</Typography>
               </Grid>
             </Grid>
           </Grid>

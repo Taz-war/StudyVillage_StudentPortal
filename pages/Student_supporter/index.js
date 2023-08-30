@@ -127,7 +127,7 @@ const Programs = () => {
           <i style={{ color: "white" }}>Your Student Supporter</i>
         </h2>
         <Box maxWidth={"850px"} width={'100%'} display={'inline-block'}>
-          <Typography variant="p" fontSize={"large"}>
+          <Typography variant="p" fontSize={"large"} color={'white'}>
             Here's your Student Supporter's contact and profile details. They're
             only a phone call away. Please be respectful of night-time hours.
             For more information on their role and the way you interact with
