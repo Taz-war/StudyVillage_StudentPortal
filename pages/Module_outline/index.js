@@ -33,7 +33,7 @@ const Module_outlines = () => {
             pl={2}
             pt={{ lg: 3, md: 3, sm: 0, xs: 3 }}
           >
-            <Link href={"/HomePage"}>
+            <Link href="/HomePage">
               <Image
                 src="https://i.ibb.co/SBgmb10/Study-Village-Logo.png"
                 alt=""
@@ -196,8 +196,8 @@ const Module_outlines = () => {
               Module content varies according to what stage of your studies
               you're at. These differences are detailed in each module video,
               available here in the Your program section above. Each module
-              outline combines your survey information, goal tracking ( if you're
-              at that stage ) and some dialog from your student supporter.
+              outline combines your survey information, goal tracking if you're
+              at that stage and some dialog from your student supporter.
               Together, this information is an invaluable record of progress, or
               alert to address areas of concern. Modules are emailed to you, and
               your parent/guardian, if you've agreed to it. Used effectively,
