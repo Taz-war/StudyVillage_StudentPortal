@@ -193,7 +193,16 @@ const Module_outlines = () => {
               </b>
               <br />
               <br />
-              Module content varies according to what stage of your studies you're at.  These differences are detailed in each module video, available here in the Your program section of this website.  Each module outline combines your survey information, goal tracking (if you're at that stage) and some dialog from your student supporter.  Together, this information is an invaluable record of progress, or alert to address areas of concern. Modules are emailed to you, and your parent/guardian, if you've agreed to it.   Used effectively, this is a key part of the StudyVillage program, providing you great support and inspiration but a fantastic platform for success 
+              Module content varies according to what stage of your studies
+              you're at. These differences are detailed in each module video,
+              available here in the Your program section of this website. Each
+              module outline combines your survey information, goal tracking (if
+              you're at that stage) and some dialog from your student supporter.
+              Together, this information is an invaluable record of progress, or
+              alert to address areas of concern. Modules are emailed to you, and
+              your parent/guardian, if you've agreed to it. Used effectively,
+              this is a key part of the StudyVillage program, providing you
+              great support and inspiration but a fantastic platform for success
             </Typography>
             <Box>
               <Grid
