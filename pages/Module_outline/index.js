@@ -1,5 +1,5 @@
 import { Box, Button, Grid, IconButton, Typography } from "@mui/material";
-import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
+import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
 import Link from "next/link";
 
 import React from "react";
@@ -21,7 +21,7 @@ const Module_outlines = () => {
       sx={{ backgroundColor: "#121F28", pb: { sm: 10, xs: 25 } }}
     >
       <Box sx={{ backgroundColor: "#121F28" }} height={"35vh"}>
-      <Grid container columns={12} zIndex={1}>
+        <Grid container columns={12} zIndex={1}>
           <Grid
             item
             lg={7}
@@ -35,7 +35,7 @@ const Module_outlines = () => {
           >
             <Link href={"/HomePage"}>
               <Image
-                src={'https://i.ibb.co/SBgmb10/Study-Village-Logo.png'}
+                src="https://i.ibb.co/SBgmb10/Study-Village-Logo.png"
                 alt=""
                 width={200}
                 height={200}
@@ -43,20 +43,21 @@ const Module_outlines = () => {
               />
             </Link>
           </Grid>
-          <Grid item lg={2} md={2} xs={3} pt={{sm:6,xs:4}} >
+          <Grid item lg={2} md={2} xs={3} pt={{ sm: 6, xs: 4 }}>
             <Typography
               // variant={{ lg: "h1", md: "h1", sm: "h4", xs: "h4" }}
-              fontSize={{sm:'23px',xs:'15px'}}
-              color={"white"} fontStyle={'italic'}
-              fontWeight={'bolder'}
+              fontSize={{ sm: "23px", xs: "15px" }}
+              color="white"
+              fontStyle="italic"
+              fontWeight="bolder"
             >
-                Brian Lara <br />
+              Brian Lara <br />
             </Typography>
             <Typography
               variant="p"
-              color={"#C5D512"}
-              fontStyle={'italic'}
-              fontWeight={'bolder'}
+              color="#C5D512"
+              fontStyle="italic"
+              fontWeight="bolder"
               fontSize={{
                 lg: "20px",
                 md: "15px",
@@ -67,12 +68,23 @@ const Module_outlines = () => {
               La Trobe University <br /> #6789
             </Typography>
           </Grid>
-          <Grid item lg={1} md={2} sm={2} xs={2} pt={3} mt={1} textAlign={"center"}>
-            <Box
-              width={"100%"}
-              textAlign={"center"}
-            >
-              <Image src={'https://i.ibb.co/bQF1RLb/Brian-Lara-Avatar-I-1.png'} alt="" width={150} height={150} />
+          <Grid
+            item
+            lg={1}
+            md={2}
+            sm={2}
+            xs={2}
+            pt={3}
+            mt={1}
+            textAlign={"center"}
+          >
+            <Box width={"100%"} textAlign={"center"}>
+              <Image
+                src="https://i.ibb.co/bQF1RLb/Brian-Lara-Avatar-I-1.png"
+                alt=""
+                width={150}
+                height={150}
+              />
             </Box>
           </Grid>
           <Grid
@@ -128,19 +140,44 @@ const Module_outlines = () => {
           >
             <Grid container columns={12} columnSpacing={2}>
               <Grid item lg={1} md={2} sm={2} xs={2}>
-                <Image src={'https://i.ibb.co/BTG2nT5/Settlingtab.png'} width={80} height={120} alt=""/>
+                <Image
+                  src="https://i.ibb.co/BTG2nT5/Settlingtab.png"
+                  width={80}
+                  height={120}
+                  alt=""
+                />
               </Grid>
               <Grid item lg={1} md={2} sm={2} xs={2}>
-                <Image src={'https://i.ibb.co/GnSrb2Y/cstab.png'} width={80} height={120} alt=""/>
+                <Image
+                  src="https://i.ibb.co/GnSrb2Y/cstab.png"
+                  width={80}
+                  height={120}
+                  alt=""
+                />
               </Grid>
               <Grid item lg={1} md={2} sm={2} xs={2}>
-                <Image src={'https://i.ibb.co/D4PZJt4/tptab.png'} width={80} height={120} alt=""/>
+                <Image
+                  src="https://i.ibb.co/D4PZJt4/tptab.png"
+                  width={80}
+                  height={120}
+                  alt=""
+                />
               </Grid>
               <Grid item lg={1} md={2} sm={2} xs={2}>
-                <Image src={'https://i.ibb.co/ZJSqyxq/gstab.png'} width={80} height={120} alt=""/>
+                <Image
+                  src="https://i.ibb.co/ZJSqyxq/gstab.png"
+                  width={80}
+                  height={120}
+                  alt=""
+                />
               </Grid>
               <Grid item lg={1} md={2} sm={2} xs={2}>
-                <Image src={'https://i.ibb.co/h84ypn4/accelbtab.png'} width={80} height={120} alt=""/>
+                <Image
+                  src="https://i.ibb.co/h84ypn4/accelbtab.png"
+                  width={80}
+                  height={120}
+                  alt=""
+                />
               </Grid>
             </Grid>
 
@@ -174,8 +211,8 @@ const Module_outlines = () => {
                 columns={12}
                 columnSpacing={{ sm: 2, xs: 0.5 }}
                 mt={2}
-                maxWidth={'500px'}
-                width={{sm:'100%',xs:'70%'}}
+                maxWidth="500px"
+                width={{ sm: "100%", xs: "70%" }}
               >
                 <Grid
                   item
@@ -196,7 +233,7 @@ const Module_outlines = () => {
                     fontSize={{ lg: "large", md: "medium" }}
                     sx={{ color: "#C5D512", ml: 2 }}
                   >
-                    <span style={{ color: "#C5D512" ,textAlign:'left'}}>
+                    <span style={{ color: "#C5D512", textAlign: "left" }}>
                       <b>BLara_8932689 Settling_In</b>
                     </span>
                   </Link>
@@ -220,7 +257,7 @@ const Module_outlines = () => {
                     fontSize={{ lg: "large", md: "medium" }}
                     sx={{ color: "#C5D512", ml: 2 }}
                   >
-                    <span style={{ color: "#C5D512" ,textAlign:'left'}}>
+                    <span style={{ color: "#C5D512", textAlign: "left" }}>
                       <b>BLara_8932689 Tracking_Progress</b>
                     </span>
                   </Link>
@@ -232,8 +269,8 @@ const Module_outlines = () => {
                 columns={12}
                 columnSpacing={{ sm: 2, xs: 0.5 }}
                 mt={2}
-                maxWidth={'500px'}
-                width={{sm:'100%',xs:'70%'}}
+                maxWidth="500px"
+                width={{ sm: "100%", xs: "70%" }}
               >
                 <Grid
                   item
@@ -254,8 +291,8 @@ const Module_outlines = () => {
                     fontSize={{ lg: "large", md: "medium" }}
                     sx={{ color: "#C5D512", ml: 2 }}
                   >
-                    <span style={{ color: "#C5D512" ,textAlign:'left'}}>
-                      <b>BLara_8932689  Consolidating Studies</b>
+                    <span style={{ color: "#C5D512", textAlign: "left" }}>
+                      <b>BLara_8932689 Consolidating Studies</b>
                     </span>
                   </Link>
                 </Grid>
@@ -278,7 +315,7 @@ const Module_outlines = () => {
                     fontSize={{ lg: "large", md: "medium" }}
                     sx={{ color: "#C5D512", ml: 2 }}
                   >
-                    <span style={{ color: "#C5D512" ,textAlign:'left'}}>
+                    <span style={{ color: "#C5D512", textAlign: "left" }}>
                       <b>BLara_8932689 Goal_setting</b>
                     </span>
                   </Link>
