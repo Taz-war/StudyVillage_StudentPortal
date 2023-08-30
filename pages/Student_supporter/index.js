@@ -186,9 +186,9 @@ const Programs = () => {
         </Box>
         <Box maxWidth={'285px'} width={'100%'} display={'inline-block'}  p={{lg:5,md:2,xs:5}}>
           <Box textAlign={'center'} mb={3}>
-        <Image src={'https://i.ibb.co/VvxfY9C/Brian-Lara-Avatar-I-2.png'} width={170} height={200} />
+        <Image src={'https://i.ibb.co/VvxfY9C/Brian-Lara-Avatar-I-2.png'} alt="" width={170} height={200} />
         </Box>
-          <Image src={'https://i.ibb.co/7j5TLLL/sspc.png'} width={250} height={150}/>
+          <Image src={'https://i.ibb.co/7j5TLLL/sspc.png'} alt="" width={250} height={150}/>
         </Box>
       </Box>
     </Box>

@@ -154,6 +154,7 @@ import {
                 inputField.map((data, index) => {
                   return (
                     <TableRow
+                    key={index}
                       className="cellColor"
                       style={{
                         overflow: "hidden",

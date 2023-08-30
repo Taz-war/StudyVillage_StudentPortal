@@ -171,7 +171,7 @@ const Programs = () => {
 
         <Grid container columns={12} columnSpacing={2} p={2} pl={4}>
           <Grid item md={3} xs={12} mt={4} textAlign={"center"}>
-            <Image src={'https://i.ibb.co/TtJjfcV/WheelsEB.png'} height={300} width={300} />
+            <Image src={'https://i.ibb.co/TtJjfcV/WheelsEB.png'} alt="" height={300} width={300} />
             <Typography
               color={"white"}
               textAlign={"center"}
@@ -181,7 +181,7 @@ const Programs = () => {
             >
               <b>YOUR ELICOS PROGRAM</b>
             </Typography>
-            <Image src={'https://i.ibb.co/x7LfFFV/Wheels8.png'} height={300} width={300} />
+            <Image src={'https://i.ibb.co/x7LfFFV/Wheels8.png'} alt="" height={300} width={300} />
             <Typography
               color={"white"}
               textAlign={"center"}
@@ -921,22 +921,22 @@ const Programs = () => {
         <Grid container columns={12} columnSpacing={2} bgcolor={'#111818'} display={'flex'} p={2} >
             <Grid item md={4} xs={12} pb={4}>
               <Box display={'flex'} pt={{lg:3,md:1,xs:2}}  mt={{lg:5,md:2,xs:3}} textAlign={{md:'left',xs:'center'}}>
-                <Image src={'https://i.ibb.co/VW6f97N/youtubeiconagentpage-transformed.png'} width={60} height={50} />
+                <Image src={'https://i.ibb.co/VW6f97N/youtubeiconagentpage-transformed.png'} alt="" width={60} height={50} />
                 <Typography variant="h5" color={'white'} display={'inline-block'} textAlign={{md:'left',xs:'center'}} pl={2}><b> ADDITIONAL <br/> VIDEO GUIDES</b></Typography>
               </Box>
             </Grid>
            
             <Grid item md={2} xs={12} pb={2} pt={2} textAlign={'center'} >
-              <Image src={'https://i.ibb.co/vzvw2Tb/connectpc.png'} width={263} height={152}/>
+              <Image src={'https://i.ibb.co/vzvw2Tb/connectpc.png'} width={263} height={152} alt=""/>
             </Grid>
             <Grid item md={2} xs={12} pb={2} pt={2} textAlign={'center'} >
-              <Image src={'https://i.ibb.co/7j5TLLL/sspc.png'} width={263} height={152}/>
+              <Image src={'https://i.ibb.co/7j5TLLL/sspc.png'} width={263} height={152} alt=""/>
             </Grid>
             <Grid item md={2} xs={12} pb={2} pt={2} textAlign={'center'} >
-              <Image src={'https://i.ibb.co/ccz95SM/surveyspc.png'} width={263} height={152}/>
+              <Image src={'https://i.ibb.co/ccz95SM/surveyspc.png'} width={263} height={152} alt=""/>
             </Grid>
             <Grid item md={2} xs={12} pb={2} pt={2} textAlign={'center'} >
-              <Image src={'https://i.ibb.co/vhvJCPh/openhourspc.png'} width={263} height={152}/>
+              <Image src={'https://i.ibb.co/vhvJCPh/openhourspc.png'} width={263} height={152} alt=""/>
             </Grid>
           </Grid>
           </Box>

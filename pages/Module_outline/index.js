@@ -128,19 +128,19 @@ const Module_outlines = () => {
           >
             <Grid container columns={12} columnSpacing={2}>
               <Grid item lg={1} md={2} sm={2} xs={2}>
-                <Image src={'https://i.ibb.co/BTG2nT5/Settlingtab.png'} width={80} height={120} />
+                <Image src={'https://i.ibb.co/BTG2nT5/Settlingtab.png'} width={80} height={120} alt=""/>
               </Grid>
               <Grid item lg={1} md={2} sm={2} xs={2}>
-                <Image src={'https://i.ibb.co/GnSrb2Y/cstab.png'} width={80} height={120} />
+                <Image src={'https://i.ibb.co/GnSrb2Y/cstab.png'} width={80} height={120} alt=""/>
               </Grid>
               <Grid item lg={1} md={2} sm={2} xs={2}>
-                <Image src={'https://i.ibb.co/D4PZJt4/tptab.png'} width={80} height={120} />
+                <Image src={'https://i.ibb.co/D4PZJt4/tptab.png'} width={80} height={120} alt=""/>
               </Grid>
               <Grid item lg={1} md={2} sm={2} xs={2}>
-                <Image src={'https://i.ibb.co/ZJSqyxq/gstab.png'} width={80} height={120} />
+                <Image src={'https://i.ibb.co/ZJSqyxq/gstab.png'} width={80} height={120} alt=""/>
               </Grid>
               <Grid item lg={1} md={2} sm={2} xs={2}>
-                <Image src={'https://i.ibb.co/h84ypn4/accelbtab.png'} width={80} height={120} />
+                <Image src={'https://i.ibb.co/h84ypn4/accelbtab.png'} width={80} height={120} alt=""/>
               </Grid>
             </Grid>
 

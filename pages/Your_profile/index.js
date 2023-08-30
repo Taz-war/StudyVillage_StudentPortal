@@ -203,6 +203,7 @@ const Your_profile = () => {
                     inputField.map((data, index) => {
                       return (
                         <TableRow
+                        key={index}
                           className="cellColor"
                           style={{
                             overflow: "hidden",
@@ -276,6 +277,7 @@ const Your_profile = () => {
                     guardianProfile.map((data, index) => {
                       return (
                         <TableRow
+                        key={index}
                           className="cellColor"
                           style={{
                             overflow: "hidden",
@@ -349,6 +351,7 @@ const Your_profile = () => {
                     guardian2.map((data, index) => {
                       return (
                         <TableRow
+                        key={index}
                           className="cellColor"
                           style={{
                             overflow: "hidden",

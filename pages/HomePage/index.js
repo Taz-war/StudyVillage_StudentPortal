@@ -310,7 +310,7 @@ const HomePage = () => {
           textAlign={{ xs: "center", md: "left" }}
           justifyContent={{ xs: "center" }}
         >
-          <Image src={'https://i.ibb.co/MCwZSf6/phoneicon-transformed.png'} width={60} height={60} />
+          <Image src={'https://i.ibb.co/MCwZSf6/phoneicon-transformed.png'} alt="" width={60} height={60} />
           <Typography
             textAlign={{ md: "left", xs: "center" }}
             ml={3}
@@ -328,19 +328,19 @@ const HomePage = () => {
           sx={{ width: { xs: "100%", sm: "100%", md: "50%", lg: "50%" } }}
         >
           <Link m={2}>
-            <Image src={'https://i.ibb.co/3RzkScZ/youtubeicon-transformed.png'} width={50} height={50} />
+            <Image src={'https://i.ibb.co/3RzkScZ/youtubeicon-transformed.png'} width={50} height={50} alt=""/>
           </Link>
           <Link m={2}>
-            <Image src={'https://i.ibb.co/BLspTkg/linkedicon-transformed.png'} height={50} width={50} />
+            <Image src={'https://i.ibb.co/BLspTkg/linkedicon-transformed.png'} height={50} width={50} alt=""/>
           </Link>
           <Link m={2}>
-            <Image src={'https://i.ibb.co/98rHhrp/FBicon-transformed.png'} height={50} width={50} />
+            <Image src={'https://i.ibb.co/98rHhrp/FBicon-transformed.png'} height={50} width={50} alt=""/>
           </Link>
           <Link m={2}>
-            <Image src={'https://i.ibb.co/kqdMcG4/mailicon-transformed.png'} width={50} height={50} />
+            <Image src={'https://i.ibb.co/kqdMcG4/mailicon-transformed.png'} width={50} height={50} alt=""/>
           </Link>
           <Link m={2} mt={3}>
-            <Image src={'https://i.ibb.co/s18RRrR/6488f4e4-5889-49d8-a841-3577c20639c7.png'} width={60} height={45} />
+            <Image src={'https://i.ibb.co/s18RRrR/6488f4e4-5889-49d8-a841-3577c20639c7.png'} width={60} height={45} alt=""/>
           </Link>
         </Box>
       </Box>
