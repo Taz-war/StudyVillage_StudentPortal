@@ -14,13 +14,13 @@ const Module_outlines = () => {
 
   return (
     <Box
-      height={"100%"}
+      height="100%"
       // minWidth={"420px"}
-      overflow={"hidden"}
-      position={"relative"}
+      overflow="hidden"
+      position="relative"
       sx={{ backgroundColor: "#121F28", pb: { sm: 10, xs: 25 } }}
     >
-      <Box sx={{ backgroundColor: "#121F28" }} height={"35vh"}>
+      <Box sx={{ backgroundColor: "#121F28" }} height="35vh">
         <Grid container columns={12} zIndex={1}>
           <Grid
             item
@@ -28,7 +28,7 @@ const Module_outlines = () => {
             md={6}
             sm={5}
             xs={5}
-            textAlign={"left"}
+            textAlign="left"
             p={5}
             pl={2}
             pt={{ lg: 3, md: 3, sm: 0, xs: 3 }}
@@ -76,9 +76,9 @@ const Module_outlines = () => {
             xs={2}
             pt={3}
             mt={1}
-            textAlign={"center"}
+            textAlign="center"
           >
-            <Box width={"100%"} textAlign={"center"}>
+            <Box width="100%" textAlign="center">
               <Image
                 src="https://i.ibb.co/bQF1RLb/Brian-Lara-Avatar-I-1.png"
                 alt=""
@@ -93,7 +93,7 @@ const Module_outlines = () => {
             md={2}
             sm={2}
             xs={2}
-            textAlign={"center"}
+            textAlign="center"
             sx={{
               p: { xs: 0, sm: 0, md: 1, lg: 1 },
               pt: { lg: 4, md: 4, sm: 2, xs: 1 },
@@ -112,7 +112,7 @@ const Module_outlines = () => {
           </Grid>
         </Grid>
       </Box>
-      <Box width={"100%"} sx={{ backgroundColor: "#121F28" }} m={0} pb={9}>
+      <Box width="100%" sx={{ backgroundColor: "#121F28" }} m={0} pb={9}>
         <h2
           style={{
             color: "white",
@@ -136,7 +136,7 @@ const Module_outlines = () => {
             mt={7}
             ml={{ md: 5, xs: 2 }}
             pr={{ md: 0, xs: 2 }}
-            textAlign={"center"}
+            textAlign="center"
           >
             <Grid container columns={12} columnSpacing={2}>
               <Grid item lg={1} md={2} sm={2} xs={2}>
@@ -182,13 +182,12 @@ const Module_outlines = () => {
             </Grid>
 
             <Typography
-              color={"white"}
-              fontSize={"medium"}
-              textAlign={"justify"}
+              color="white"
+              fontSize="medium"
+              textAlign="justify"
               mt={4}
             >
               <b>
-                {" "}
                 Coming once a semester, your StudyVillage Outline is <br /> a
                 snapshot of how you're tracking in your studies and life abroad.
               </b>
@@ -197,8 +196,8 @@ const Module_outlines = () => {
               Module content varies according to what stage of your studies
               you're at. These differences are detailed in each module video,
               available here in the Your program section above. Each module
-              outline combines your survey information, goal tracking (if you're
-              at that stage) and some dialog from your student supporter.
+              outline combines your survey information, goal tracking ( if you're
+              at that stage ) and some dialog from your student supporter.
               Together, this information is an invaluable record of progress, or
               alert to address areas of concern. Modules are emailed to you, and
               your parent/guardian, if you've agreed to it. Used effectively,
@@ -218,7 +217,7 @@ const Module_outlines = () => {
                   item
                   sm={6}
                   xs={12}
-                  display={"flex"}
+                  display="flex"
                   // justifyContent={"space-around"}
                   mt={2}
                 >
@@ -276,7 +275,7 @@ const Module_outlines = () => {
                   item
                   sm={6}
                   xs={12}
-                  display={"flex"}
+                  display="flex"
                   // justifyContent={'space-around'}
                   mt={2}
                 >
@@ -300,7 +299,7 @@ const Module_outlines = () => {
                   item
                   sm={6}
                   xs={12}
-                  display={"flex"}
+                  display="flex"
                   // justifyContent={"space-around"}
                   mt={2}
                 >
@@ -330,7 +329,7 @@ const Module_outlines = () => {
             md={5}
             sm={12}
             xs={12}
-            textAlign={"center"}
+            textAlign="center"
             mt={3}
           ></Grid>
         </Grid>
