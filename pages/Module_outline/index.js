@@ -184,18 +184,18 @@ const Module_outlines = () => {
             <Typography
               color="white"
               fontSize="medium"
-              textAlign="justify"
+              textAlign={"left"}
               mt={4}
             >
               <b>
-                Coming once a semester, your StudyVillage Outline is <br /> a
+                Coming once a semester, your StudyVillage Outline is a
                 snapshot of how you're tracking in your studies and life abroad.
               </b>
               <br />
               <br />
               Module content varies according to what stage of your studies
               you're at. These differences are detailed in each module video,
-              available here in the Your program section of this website. Each
+              available here in the <b style={{fontWeight:'bolder'}}>Your Program</b> section of this website. Each
               module outline combines your survey information, goal tracking (if
               you're at that stage) and some dialog from your student supporter.
               Together, this information is an invaluable record of progress, or
@@ -204,7 +204,12 @@ const Module_outlines = () => {
               this is a key part of the StudyVillage program, providing you
               great support and inspiration but a fantastic platform for success
             </Typography>
+            <br/>
+            
+            <Typography variant="h6" textAlign={"left"}>Completed Outlines for (Student Name)</Typography>
+
             <Box>
+              
               <Grid
                 container
                 columns={12}

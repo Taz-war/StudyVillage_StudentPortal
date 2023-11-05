@@ -185,7 +185,7 @@ const Your_profile = () => {
         <Box display={"flex"}>
           <Box width={"100%"} maxWidth={"850px"} pt={3}>
             <Typography variant="p" textAlign={"left"} fontSize={"large"} color={'white'}>
-              We have the following information on record about you. Please keep
+              We have the following information on record. Please keep
               this information up to date so we can stay in touch.{" "}
             </Typography>
             <TableContainer sx={{ mt: 3 }}>

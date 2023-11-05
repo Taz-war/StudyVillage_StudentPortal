@@ -12,6 +12,7 @@ function MyApp({ Component, pageProps }) {
           rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap"
         />
+        <link href='https://fonts.googleapis.com/css?family=Open Sans Condensed:300' rel='stylesheet'></link>
         <link
           rel="stylesheet"
           href="https://fonts.googleapis.com/icon?family=Material+Icons"

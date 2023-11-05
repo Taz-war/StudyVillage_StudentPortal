@@ -191,8 +191,9 @@ const Hello_Brian = () => {
                   <Typography
                     color={"black"}
                     fontWeight={"bold"}
-                    pl={2}
-                    p={0.5}
+                    pl={2.5}
+                    p={0.6}
+                    style={{paddingLeft:"10px"}}
                   >
                     Event/task
                   </Typography>
@@ -239,8 +240,9 @@ const Hello_Brian = () => {
                   <Typography
                     color={"black"}
                     fontWeight={"bold"}
-                    pl={2}
-                    p={0.5}
+                    pl={2.5}
+                    p={0.6}
+                    style={{paddingLeft:"10px"}}
                   >
                     Complete by (date)
                   </Typography>
@@ -295,8 +297,9 @@ const Hello_Brian = () => {
                   <Typography
                     color={"black"}
                     fontWeight={"bold"}
-                    pl={2}
-                    p={0.5}
+                    pl={2.5}
+                    p={0.6}
+                    style={{paddingLeft:"10px"}}
                   >
                     Info
                   </Typography>
@@ -343,8 +346,8 @@ const Hello_Brian = () => {
         </Box>
         <Grid container columns={12} maxWidth={'1150px'} columnSpacing={2} mt={3} ml={2}>
           <Grid item md={6}>
-            <Typography variant="h5" ml={4} fontWeight={"bolder"} color={'white'}>
-              YOUR PROGRAM :
+            <Typography variant="h5" ml={4} fontWeight={"bolder"} color={'white'} >
+              YOUR PROGRAM 
             </Typography>
             <Grid container columns={12} columnSpacing={2} mt={2}>
               <Grid item md={6} textAlign={'center'}>
@@ -359,9 +362,9 @@ const Hello_Brian = () => {
           </Grid>
           <Grid item md={6} textAlign={'center'}>
             <Box mb={3} mt={4}>
-            <Button variant="contained" sx={{bgcolor:'#004AAD',color:'white','& .hover':{bgcolor:'#004AAD',color:'white'}}}>Book an openhour meeting</Button>
+            <Button variant="contained" sx={{bgcolor:'#004AAD',color:'white','& .hover':{bgcolor:'#004AAD',color:'white'}}}>Book an open hours meeting</Button>
             </Box>
-            <Image src={'https://i.ibb.co/vhvJCPh/openhourspc.png'} alt="" width={280} height={175}/>
+            <Image src={'https://i.ibb.co/MN8YdXk/openhourspc-1.png'} alt="" width={280} height={175}/>
           </Grid>
         </Grid>
       </Box>

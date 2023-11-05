@@ -127,7 +127,7 @@ const Programs = () => {
           <i style={{ color: "white" }}>Your Student Supporter</i>
         </h2>
         <Box maxWidth={"850px"} width={'100%'} display={'inline-block'}>
-          <Typography variant="p" fontSize={"large"} color={'white'}>
+          <Typography variant="p" fontSize={"medium"} color={'white'} textAlign={'left'}>
             Here's your Student Supporter's contact and profile details. They're
             only a phone call away. Please be respectful of night-time hours.
             For more information on their role and the way you interact with
@@ -188,7 +188,7 @@ const Programs = () => {
           <Box textAlign={'center'} mb={3}>
         <Image src={'https://i.ibb.co/VvxfY9C/Brian-Lara-Avatar-I-2.png'} alt="" width={170} height={200} />
         </Box>
-          <Image src={'https://i.ibb.co/7j5TLLL/sspc.png'} alt="" width={250} height={150}/>
+          <Image src={'https://i.ibb.co/P97ppgq/image01.png'} alt="" width={250} height={150}/>
         </Box>
       </Box>
     </Box>

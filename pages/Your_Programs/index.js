@@ -15,13 +15,12 @@ import Image from "next/image";
 import MainMenu from "../../components/MainMenu";
 import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
 
-
 const Programs = () => {
   const { open, setOpen } = useContext(StateContex);
   return (
     <>
       <Box sx={{ backgroundColor: "#121F28" }} height={"35vh"}>
-      <Grid container columns={12} zIndex={1}>
+        <Grid container columns={12} zIndex={1}>
           <Grid
             item
             lg={7}
@@ -35,7 +34,7 @@ const Programs = () => {
           >
             <Link href={"/HomePage"}>
               <Image
-                src={'https://i.ibb.co/SBgmb10/Study-Village-Logo.png'}
+                src={"https://i.ibb.co/SBgmb10/Study-Village-Logo.png"}
                 alt=""
                 width={200}
                 height={200}
@@ -43,20 +42,21 @@ const Programs = () => {
               />
             </Link>
           </Grid>
-          <Grid item lg={2} md={2} xs={3} pt={{sm:6,xs:4}} >
+          <Grid item lg={2} md={2} xs={3} pt={{ sm: 6, xs: 4 }}>
             <Typography
               // variant={{ lg: "h1", md: "h1", sm: "h4", xs: "h4" }}
-              fontSize={{sm:'23px',xs:'15px'}}
-              color={"white"} fontStyle={'italic'}
-              fontWeight={'bolder'}
+              fontSize={{ sm: "23px", xs: "15px" }}
+              color={"white"}
+              fontStyle={"italic"}
+              fontWeight={"bolder"}
             >
-                Brian Lara <br />
+              Brian Lara <br />
             </Typography>
             <Typography
               variant="p"
               color={"#C5D512"}
-              fontStyle={'italic'}
-              fontWeight={'bolder'}
+              fontStyle={"italic"}
+              fontWeight={"bolder"}
               fontSize={{
                 lg: "20px",
                 md: "15px",
@@ -67,12 +67,23 @@ const Programs = () => {
               La Trobe University <br /> #6789
             </Typography>
           </Grid>
-          <Grid item lg={1} md={2} sm={2} xs={2} pt={3} mt={1} textAlign={"center"}>
-            <Box
-              width={"100%"}
-              textAlign={"center"}
-            >
-              <Image src={'https://i.ibb.co/bQF1RLb/Brian-Lara-Avatar-I-1.png'} alt="" width={150} height={150} />
+          <Grid
+            item
+            lg={1}
+            md={2}
+            sm={2}
+            xs={2}
+            pt={3}
+            mt={1}
+            textAlign={"center"}
+          >
+            <Box width={"100%"} textAlign={"center"}>
+              <Image
+                src={"https://i.ibb.co/bQF1RLb/Brian-Lara-Avatar-I-1.png"}
+                alt=""
+                width={150}
+                height={150}
+              />
             </Box>
           </Grid>
           <Grid
@@ -115,7 +126,7 @@ const Programs = () => {
           <i>Your Program</i>
         </h2>
         <Grid container columns={12} mt={3} pb={10} p={2} pl={4}>
-          <Grid item lg={9} md={8} sm={7} xs={12} pr={2} pb={4}>
+          <Grid item lg={6} md={7} sm={9} xs={12} pr={2} pb={4}>
             <Typography
               variant="p"
               color={"white"}
@@ -138,7 +149,7 @@ const Programs = () => {
             </Typography>
           </Grid>
           <Grid item lg={3} md={4} sm={5} xs={12}>
-            <Box display={"flex"} width={"100%"} ml={1}>
+            {/* <Box display={"flex"} width={"100%"} ml={1}>
               <Box width={"50%"}>
                 <Typography variant="h6" color={"white"}>
                   <b> OVERVIEW</b>
@@ -150,29 +161,34 @@ const Programs = () => {
                     height={50}
                     width={50}
                   />
-                  <Link
-                    href="#"
-                    fontSize={{ lg: "large", md: "medium" }}
-                    sx={{ color: "#C5D512", ml: 2 }}
-                  >
-                    <span style={{ color: "#C5D512" }}>
-                      {" "}
-                      Download <br /> QuickGuide
-                    </span>
+                  <<Link
+                href="https://workdrive.zohoexternal.com/external/57523b2e3313c2a1d5903cdb7f75449e1f588c025c772999adcfb9c5b09a8031"
+                target="_blank"
+                fontSize={{ lg: "large", md: "medium" }}
+                sx={{ color: "#C5D512", ml: 2 }}
+              >
+                Download <br /> QuickGuide
+              </Link>
                   </Link>
                 </Box>
               </Box>
               <Box width={"50%"} textAlign={"left"}>
                 <Image src={'https://i.ibb.co/7jMjmBB/overviewpc.png'} alt="" width={180} height={100} />
               </Box>
-            </Box>
+            </Box> */}
           </Grid>
         </Grid>
 
         <Grid container columns={12} columnSpacing={2} p={2} pl={4}>
           <Grid item md={3} xs={12} mt={4} textAlign={"center"}>
-            <Image src={'https://i.ibb.co/TtJjfcV/WheelsEB.png'} alt="" height={300} width={300} />
+            <Image
+              src={"https://i.ibb.co/TtJjfcV/WheelsEB.png"}
+              alt=""
+              height={300}
+              width={300}
+            />
             <Typography
+              sx={{ fontFamily: "Open Sans Condensed" }}
               color={"white"}
               textAlign={"center"}
               variant="h5"
@@ -181,12 +197,18 @@ const Programs = () => {
             >
               <b>YOUR ELICOS PROGRAM</b>
             </Typography>
-            <Image src={'https://i.ibb.co/x7LfFFV/Wheels8.png'} alt="" height={300} width={300} />
+            <Image
+              src={"https://i.ibb.co/x7LfFFV/Wheels8.png"}
+              alt=""
+              height={300}
+              width={300}
+            />
             <Typography
               color={"white"}
               textAlign={"center"}
               variant="h5"
               mt={2}
+              sx={{ fontFamily: "Open Sans Condensed" }}
             >
               <b>YOUR AWARD PROGRAM</b>
             </Typography>
@@ -216,7 +238,12 @@ const Programs = () => {
                 <Grid item md={2} xs={6}>
                   <Typography
                     variant="h5"
-                    sx={{ color: "white", marginTop: 0, mb: 2 }}
+                    sx={{
+                      color: "white",
+                      marginTop: 0,
+                      mb: 2,
+                      fontFamily: "Open Sans Condensed",
+                    }}
                   >
                     {" "}
                     <b>ELICOS A </b>
@@ -229,7 +256,8 @@ const Programs = () => {
                       width={50}
                     />
                     <Link
-                      href="#"
+                      href="https://workdrive.zohoexternal.com/external/57523b2e3313c2a1d5903cdb7f75449e1f588c025c772999adcfb9c5b09a8031"
+                      target="_blank"
                       fontSize={{ lg: "large", md: "medium" }}
                       sx={{ color: "#C5D512", ml: 2 }}
                     >
@@ -239,15 +267,20 @@ const Programs = () => {
                 </Grid>
                 <Grid item md={2} xs={6} mb={2} pr={1}>
                   <Image
-                    src={'https://i.ibb.co/pRCzWyf/eapc.png'}
+                    src={"https://i.ibb.co/pRCzWyf/eapc.png"}
                     alt=""
                     style={{ maxHeight: "170px", maxWidth: "330px" }}
-                  width={196}
-                  height={113}
+                    width={196}
+                    height={113}
                   />
                 </Grid>
                 <Grid item md={1} xs={3}>
-                  <Image src={'https://i.ibb.co/kDywC9h/eatab.png'} alt="" width={94} height={130}/>
+                  <Image
+                    src={"https://i.ibb.co/kDywC9h/eatab.png"}
+                    alt=""
+                    width={94}
+                    height={130}
+                  />
                 </Grid>
                 <Grid item md={6} sm={8} xs={9}>
                   <Typography
@@ -284,7 +317,12 @@ const Programs = () => {
                 <Grid item md={2} xs={6} mb={2}>
                   <Typography
                     variant="h5"
-                    sx={{ color: "white", marginTop: 0, mb: 2 }}
+                    sx={{
+                      color: "white",
+                      marginTop: 0,
+                      mb: 2,
+                      fontFamily: "Open Sans Condensed",
+                    }}
                   >
                     {" "}
                     <b>ELICOS B</b>
@@ -297,7 +335,8 @@ const Programs = () => {
                       width={50}
                     />
                     <Link
-                      href="#"
+                      href="https://workdrive.zohoexternal.com/external/9c33a766bd9b854630f1bb5a2d86c339a56f686d5c15ff4c2a5606786214ea47"
+                      target="_blank"
                       fontSize={{ lg: "large", md: "medium" }}
                       sx={{ color: "#C5D512", ml: 2 }}
                     >
@@ -307,15 +346,20 @@ const Programs = () => {
                 </Grid>
                 <Grid item md={2} xs={6} mb={2} pr={1}>
                   <Image
-                    src={'https://i.ibb.co/NtdFdZz/ebpc.png'}
+                    src={"https://i.ibb.co/NtdFdZz/ebpc.png"}
                     alt=""
                     style={{ maxHeight: "170px", maxWidth: "330px" }}
-                  width={196}
-                  height={113}
+                    width={196}
+                    height={113}
                   />
                 </Grid>
                 <Grid item md={1} xs={3}>
-                  <Image src={'https://i.ibb.co/T4V2hCJ/ebtab.png'} alt="" width={94} height={130}/>
+                  <Image
+                    src={"https://i.ibb.co/T4V2hCJ/ebtab.png"}
+                    alt=""
+                    width={94}
+                    height={130}
+                  />
                 </Grid>
                 <Grid item md={6} sm={8} xs={9}>
                   <Typography
@@ -353,7 +397,11 @@ const Programs = () => {
                 <Grid item md={2} xs={6} mb={2} pr={1}>
                   <Typography
                     variant="h5"
-                    sx={{ color: "white", marginTop: 0 }}
+                    sx={{
+                      color: "white",
+                      marginTop: 0,
+                      fontFamily: "Open Sans Condensed",
+                    }}
                   >
                     {" "}
                     <b>Settling In </b>
@@ -366,32 +414,42 @@ const Programs = () => {
                       width={50}
                     />
                     <Link
-                      href="#"
+                      href="https://workdrive.zohoexternal.com/external/0bab68c1d9ed6827d4feb7d4209f6a49c8c97a41c566b43727fc237965e970d1"
+                      target="_blank"
                       fontSize={{ lg: "large", md: "medium" }}
                       sx={{ color: "#C5D512", ml: 2 }}
                     >
-                      <span style={{ color: "#C5D512", fontSize: "small" }}>
-                        Download <br /> QuickGuide
-                      </span>
+                      Download <br /> QuickGuide
                     </Link>
                   </Box>
                 </Grid>
                 <Grid item md={2} xs={6} mb={2} pr={1}>
-                  <Image
-                    src={'https://i.ibb.co/p3q1dcc/settling.png'}
-                    alt=""
-                    width={196}
-                    height={113}
-                    style={{ maxHeight: "170px", maxWidth: "330px" }}
-                  />
+                  <Link
+                    target={"_blank"}
+                    href="https://www.youtube.com/watch?v=3VyrvWoXqrY&ab_channel=StudyVillage"
+                  >
+                    <Image
+                      src={"https://i.ibb.co/p3q1dcc/settling.png"}
+                      alt=""
+                      width={196}
+                      height={113}
+                      style={{ maxHeight: "170px", maxWidth: "330px" }}
+                    />
+                  </Link>
                 </Grid>
                 <Grid item md={1} xs={3}>
-                  <Image src={'https://i.ibb.co/BTG2nT5/Settlingtab.png'} objectFit="fill" alt="" width={94} height={130}/>
+                  <Image
+                    src={"https://i.ibb.co/BTG2nT5/Settlingtab.png"}
+                    objectFit="fill"
+                    alt=""
+                    width={94}
+                    height={130}
+                  />
                 </Grid>
                 <Grid item md={7} sm={8} xs={9}>
                   <Typography
                     fontSize={{
-                      lg: "x-small",
+                      lg: "small",
                       md: "x-small",
                       sm: "small",
                       xs: "small",
@@ -423,7 +481,11 @@ const Programs = () => {
                 <Grid item md={2} xs={6} mb={2} pr={1}>
                   <Typography
                     variant="h5"
-                    sx={{ color: "white", marginTop: 0 }}
+                    sx={{
+                      color: "white",
+                      marginTop: 0,
+                      fontFamily: "Open Sans Condensed",
+                    }}
                   >
                     {" "}
                     <b>Consolidating Studies </b>
@@ -436,32 +498,41 @@ const Programs = () => {
                       width={50}
                     />
                     <Link
-                      href="#"
+                      href="https://workdrive.zohoexternal.com/external/71383903fbf82c91eace229b5d01255ba5d8542c9a509839f1429e8b61ce995b"
+                      target="_blank"
                       fontSize={{ lg: "large", md: "medium" }}
                       sx={{ color: "#C5D512", ml: 2 }}
                     >
-                      <span style={{ color: "#C5D512", fontSize: "small" }}>
-                        Download <br /> QuickGuide
-                      </span>
+                      Download <br /> QuickGuide
                     </Link>
                   </Box>
                 </Grid>
                 <Grid item md={2} xs={6} mb={2} pr={1}>
-                  <Image
-                    src={'https://i.ibb.co/JK4Xhmx/CSpc.png'}
-                    alt=""
-                    style={{ maxHeight: "170px", maxWidth: "330px" }}
-                  width={196}
-                  height={113}
-                  />
+                  <Link
+                    target={"_blank"}
+                    href="https://www.youtube.com/watch?v=3VyrvWoXqrY&ab_channel=StudyVillage"
+                  >
+                    <Image
+                      src={"https://i.ibb.co/JK4Xhmx/CSpc.png"}
+                      alt=""
+                      style={{ maxHeight: "170px", maxWidth: "330px" }}
+                      width={196}
+                      height={113}
+                    />
+                  </Link>
                 </Grid>
                 <Grid item md={1} xs={3}>
-                  <Image src={'https://i.ibb.co/GnSrb2Y/cstab.png'} alt="" width={94} height={130}/>
+                  <Image
+                    src={"https://i.ibb.co/GnSrb2Y/cstab.png"}
+                    alt=""
+                    width={94}
+                    height={130}
+                  />
                 </Grid>
                 <Grid item md={6} sm={8} xs={9}>
                   <Typography
                     fontSize={{
-                      lg: "x-small",
+                      lg: "small",
                       md: "x-small",
                       sm: "small",
                       xs: "small",
@@ -492,7 +563,11 @@ const Programs = () => {
                 <Grid item md={2} xs={6} mb={2} pr={1}>
                   <Typography
                     variant="h5"
-                    sx={{ color: "white", marginTop: 0 }}
+                    sx={{
+                      color: "white",
+                      marginTop: 0,
+                      fontFamily: "Open Sans Condensed",
+                    }}
                   >
                     {" "}
                     <b>Tracking Progress </b>
@@ -505,32 +580,41 @@ const Programs = () => {
                       width={50}
                     />
                     <Link
-                      href="#"
+                      href="https://workdrive.zohoexternal.com/external/bc5bc8c06a67ea9a9668fe20b1068216b45cf5b6310c8467e98419180d0c106a"
+                      target="_blank"
                       fontSize={{ lg: "large", md: "medium" }}
                       sx={{ color: "#C5D512", ml: 2 }}
                     >
-                      <span style={{ color: "#C5D512", fontSize: "small" }}>
-                        Download <br /> QuickGuide
-                      </span>
+                      Download <br /> QuickGuide
                     </Link>
                   </Box>
                 </Grid>
                 <Grid item md={2} xs={6} mb={2} pr={1}>
-                  <Image
-                    src={'https://i.ibb.co/sH8kgPY/tppc.png'}
-                    alt=""
-                    style={{ maxHeight: "170px", maxWidth: "330px" }}
-                  width={196}
-                  height={113}
-                  />
+                  <Link
+                    target={"_blank"}
+                    href="https://www.youtube.com/watch?v=WI0ayWpZzGs&list=PL4JWIvijTInKtFVushQLadFo7IgiJzuR4&index=5&ab_channel=StudyVillage"
+                  >
+                    <Image
+                      src={"https://i.ibb.co/sH8kgPY/tppc.png"}
+                      alt=""
+                      style={{ maxHeight: "170px", maxWidth: "330px" }}
+                      width={196}
+                      height={113}
+                    />
+                  </Link>
                 </Grid>
                 <Grid item md={1} xs={3}>
-                  <Image src={'https://i.ibb.co/D4PZJt4/tptab.png'} alt="" width={94} height={130}/>
+                  <Image
+                    src={"https://i.ibb.co/D4PZJt4/tptab.png"}
+                    alt=""
+                    width={94}
+                    height={130}
+                  />
                 </Grid>
                 <Grid item md={6} sm={8} xs={9}>
                   <Typography
                     fontSize={{
-                      lg: "x-small",
+                      lg: "small",
                       md: "x-small",
                       sm: "small",
                       xs: "small",
@@ -564,7 +648,11 @@ const Programs = () => {
                 <Grid item md={2} xs={6} mb={2} pr={1}>
                   <Typography
                     variant="h5"
-                    sx={{ color: "white", marginTop: 0 }}
+                    sx={{
+                      color: "white",
+                      marginTop: 0,
+                      fontFamily: "Open Sans Condensed",
+                    }}
                   >
                     {" "}
                     <b>Goal Setting </b>
@@ -577,32 +665,41 @@ const Programs = () => {
                       width={50}
                     />
                     <Link
-                      href="#"
+                      href="https://workdrive.zohoexternal.com/external/b1a11569ca8b8c7fed85a67cf209b217befa6e615714c6e92a1010e95de4ed1c"
+                      target="_blank"
                       fontSize={{ lg: "large", md: "medium" }}
                       sx={{ color: "#C5D512", ml: 2 }}
                     >
-                      <span style={{ color: "#C5D512", fontSize: "small" }}>
-                        Download <br /> QuickGuide
-                      </span>
+                      Download <br /> QuickGuide
                     </Link>
                   </Box>
                 </Grid>
                 <Grid item md={2} xs={6} mb={2} pr={1}>
-                  <Image
-                    src={'https://i.ibb.co/g4mXdMF/gspc.png'}
-                    alt=""
-                    style={{ maxHeight: "170px", maxWidth: "330px" }}
-                  width={196}
-                  height={113}
-                  />
+                  <Link
+                    target={"_blank"}
+                    href="https://www.youtube.com/watch?v=eY9cdYmtUnk&ab_channel=StudyVillage"
+                  >
+                    <Image
+                      src={"https://i.ibb.co/g4mXdMF/gspc.png"}
+                      alt=""
+                      style={{ maxHeight: "170px", maxWidth: "330px" }}
+                      width={196}
+                      height={113}
+                    />
+                  </Link>
                 </Grid>
                 <Grid item md={1} xs={3}>
-                  <Image src={'https://i.ibb.co/ZJSqyxq/gstab.png'} alt="" width={94} height={130}/>
+                  <Image
+                    src={"https://i.ibb.co/ZJSqyxq/gstab.png"}
+                    alt=""
+                    width={94}
+                    height={130}
+                  />
                 </Grid>
                 <Grid item md={6} sm={8} xs={9}>
                   <Typography
                     fontSize={{
-                      lg: "x-small",
+                      lg: "small",
                       md: "x-small",
                       sm: "small",
                       xs: "small",
@@ -636,7 +733,11 @@ const Programs = () => {
                 <Grid item md={2} xs={6} mb={2} pr={1}>
                   <Typography
                     variant="h5"
-                    sx={{ color: "white", marginTop: 0 }}
+                    sx={{
+                      color: "white",
+                      marginTop: 0,
+                      fontFamily: "Open Sans Condensed",
+                    }}
                   >
                     {" "}
                     <b>Accelerator A </b>
@@ -649,35 +750,44 @@ const Programs = () => {
                       width={50}
                     />
                     <Link
-                      href="#"
+                      href="https://workdrive.zohoexternal.com/external/b90a1215cc60472b2d10e2fd9563aa35b1dbbdf5f80a3428046f840cd3783960"
+                      target="_blank"
                       fontSize={{ lg: "large", md: "medium" }}
                       sx={{ color: "#C5D512", ml: 2 }}
                     >
-                      <span style={{ color: "#C5D512", fontSize: "small" }}>
-                        Download <br /> QuickGuide
-                      </span>
+                      Download <br /> QuickGuide
                     </Link>
                   </Box>
                 </Grid>
                 <Grid item md={2} xs={6} mb={2} pr={1}>
-                  <Image
-                    src={'https://i.ibb.co/GnH8qK0/accelapc.png'}
-                    alt=""
-                    style={{ maxHeight: "170px", maxWidth: "330px" }}
-                  width={196}
-                  height={113}
-                  />
+                  <Link
+                    target={"_blank"}
+                    href="https://www.youtube.com/watch?v=cj9FQv4_gjM&ab_channel=StudyVillage"
+                  >
+                    <Image
+                      src={"https://i.ibb.co/GnH8qK0/accelapc.png"}
+                      alt=""
+                      style={{ maxHeight: "170px", maxWidth: "330px" }}
+                      width={196}
+                      height={113}
+                    />
+                  </Link>
                 </Grid>
                 <Grid item md={1} xs={3}>
-                  <Image src={'https://i.ibb.co/6n23BYX/accelatab.png'} alt="" width={94} height={130}/>
+                  <Image
+                    src={"https://i.ibb.co/6n23BYX/accelatab.png"}
+                    alt=""
+                    width={94}
+                    height={130}
+                  />
                 </Grid>
                 <Grid item md={6} sm={8} xs={9}>
                   <Typography
                     fontSize={{
-                      lg: "x-small",
+                      lg: "small",
                       md: "x-small",
                       sm: "small",
-                      xs: "x-small",
+                      xs: "small",
                     }}
                     sx={{ wordSpacing: "1px" }}
                     color={"white"}
@@ -712,7 +822,11 @@ const Programs = () => {
                 <Grid item md={2} xs={6} mb={2} pr={1}>
                   <Typography
                     variant="h5"
-                    sx={{ color: "white", marginTop: 0 }}
+                    sx={{
+                      color: "white",
+                      marginTop: 0,
+                      fontFamily: "Open Sans Condensed",
+                    }}
                   >
                     {" "}
                     <b>Accelerator B</b>
@@ -725,35 +839,41 @@ const Programs = () => {
                       width={50}
                     />
                     <Link
-                      href="#"
+                      href="https://workdrive.zohoexternal.com/external/7961692594241226a438734a62b4ee0ad088fd371f8cc2fb714d13f9799a2365"
+                      target="_blank"
                       fontSize={{ lg: "large", md: "medium" }}
                       sx={{ color: "#C5D512", ml: 2 }}
                     >
-                      <span style={{ color: "#C5D512", fontSize: "small" }}>
-                        Download <br /> QuickGuide
-                      </span>
+                      Download <br /> QuickGuide
                     </Link>
                   </Box>
                 </Grid>
                 <Grid item md={2} xs={6} mb={2} pr={1}>
-                  <Image
-                    src={'https://i.ibb.co/NCZ7tN6/accelbpc.png'}
-                    alt=""
-                    style={{ maxHeight: "170px", maxWidth: "330px" }}
-                  width={196}
-                  height={113}
-                  />
+                  {/* <Link target={"_blank"} href=""> */}
+                    <Image
+                      src={"https://i.ibb.co/NCZ7tN6/accelbpc.png"}
+                      alt=""
+                      style={{ maxHeight: "170px", maxWidth: "330px" }}
+                      width={196}
+                      height={113}
+                    />
+                  {/* </Link> */}
                 </Grid>
                 <Grid item md={1} xs={3}>
-                  <Image src={'https://i.ibb.co/h84ypn4/accelbtab.png'} alt="" width={94} height={130}/>
+                  <Image
+                    src={"https://i.ibb.co/h84ypn4/accelbtab.png"}
+                    alt=""
+                    width={94}
+                    height={130}
+                  />
                 </Grid>
                 <Grid item md={6} sm={8} xs={9}>
                   <Typography
                     fontSize={{
-                      lg: "x-small",
+                      lg: "small",
                       md: "x-small",
                       sm: "small",
-                      xs: "x-small",
+                      xs: "small",
                     }}
                     sx={{ wordSpacing: "1px" }}
                     color={"white"}
@@ -788,7 +908,11 @@ const Programs = () => {
                 <Grid item md={2} xs={6} mb={2} pr={1}>
                   <Typography
                     variant="h5"
-                    sx={{ color: "white", marginTop: 0 }}
+                    sx={{
+                      color: "white",
+                      marginTop: 0,
+                      fontFamily: "Open Sans Condensed",
+                    }}
                   >
                     {" "}
                     <b>Goal Tracking</b>
@@ -801,32 +925,41 @@ const Programs = () => {
                       width={50}
                     />
                     <Link
-                      href="#"
+                      href="https://workdrive.zohoexternal.com/external/2aaf444a0589bf0bbe18d095bc5394bdad6f54f70ff52bfa2c2b9b1da012ed7d"
+                      target="_blank"
                       fontSize={{ lg: "large", md: "medium" }}
                       sx={{ color: "#C5D512", ml: 2 }}
                     >
-                      <span style={{ color: "#C5D512", fontSize: "small" }}>
-                        Download <br /> QuickGuide
-                      </span>
+                      Download <br /> QuickGuide
                     </Link>
                   </Box>
                 </Grid>
                 <Grid item md={2} xs={6} mb={2} pr={1}>
-                  <Image
-                    src={'https://i.ibb.co/pRCzWyf/eapc.png'}
-                    alt=""
-                    style={{ maxHeight: "170px", maxWidth: "330px" }}
-                  width={196}
-                  height={113}
-                  />
+                  <Link
+                    target={"_blank"}
+                    href="https://www.youtube.com/watch?v=mTMAzMeWiko&ab_channel=StudyVillage"
+                  >
+                    <Image
+                      src={"https://i.ibb.co/pRCzWyf/eapc.png"}
+                      alt=""
+                      style={{ maxHeight: "170px", maxWidth: "330px" }}
+                      width={196}
+                      height={113}
+                    />
+                  </Link>
                 </Grid>
                 <Grid item md={1} xs={3}>
-                  <Image src={'https://i.ibb.co/WHThrM6/gttab.png'} alt="" width={94} height={130}/>
+                  <Image
+                    src={"https://i.ibb.co/WHThrM6/gttab.png"}
+                    alt=""
+                    width={94}
+                    height={130}
+                  />
                 </Grid>
                 <Grid item md={6} sm={8} xs={9}>
                   <Typography
                     fontSize={{
-                      lg: "x-small",
+                      lg: "small",
                       md: "x-small",
                       sm: "small",
                       xs: "small",
@@ -859,7 +992,11 @@ const Programs = () => {
                 <Grid item md={2} xs={6} mb={2} pr={1}>
                   <Typography
                     variant="h5"
-                    sx={{ color: "white", marginTop: 0 }}
+                    sx={{
+                      color: "white",
+                      marginTop: 0,
+                      fontFamily: "Open Sans Condensed",
+                    }}
                   >
                     {" "}
                     <b>Transition</b>
@@ -872,32 +1009,41 @@ const Programs = () => {
                       width={50}
                     />
                     <Link
-                      href="#"
+                      href="https://workdrive.zohoexternal.com/file/1a1vl6c35e94548c14a75a73f90774299bd8b"
+                      target="_blank"
                       fontSize={{ lg: "large", md: "medium" }}
                       sx={{ color: "#C5D512", ml: 2 }}
                     >
-                      <span style={{ color: "#C5D512", fontSize: "small" }}>
-                        Download <br /> QuickGuide
-                      </span>
+                      Download <br /> QuickGuide
                     </Link>
                   </Box>
                 </Grid>
                 <Grid item md={2} xs={6} mb={2} pr={1}>
-                  <Image
-                    src={'https://i.ibb.co/SXh0XV1/transpc.png'}
-                    alt=""
-                    style={{ maxHeight: "170px", maxWidth: "330px" }}
-                  width={196}
-                  height={113}
-                  />
+                  <Link
+                    target={"_blank"}
+                    href="https://www.youtube.com/watch?v=p1flK_Se6_c&ab_channel=StudyVillage"
+                  >
+                    <Image
+                      src={"https://i.ibb.co/SXh0XV1/transpc.png"}
+                      alt=""
+                      style={{ maxHeight: "170px", maxWidth: "330px" }}
+                      width={196}
+                      height={113}
+                    />
+                  </Link>
                 </Grid>
                 <Grid item md={1} xs={3}>
-                  <Image src={'https://i.ibb.co/ZTVbYzx/transtab.png'} alt="" width={94} height={130}/>
+                  <Image
+                    src={"https://i.ibb.co/ZTVbYzx/transtab.png"}
+                    alt=""
+                    width={94}
+                    height={130}
+                  />
                 </Grid>
                 <Grid item md={6} sm={8} xs={9}>
                   <Typography
                     fontSize={{
-                      lg: "x-small",
+                      lg: "small",
                       md: "x-small",
                       sm: "small",
                       xs: "small",
@@ -917,29 +1063,99 @@ const Programs = () => {
             </Box>
           </Grid>
         </Grid>
-        <Box  mb={10} p={6} pl={8}>
-        <Grid container columns={12} columnSpacing={2} bgcolor={'#111818'} display={'flex'} p={2} >
+        <Box mb={10} p={6} pl={8}>
+          <Grid
+            container
+            columns={12}
+            columnSpacing={2}
+            bgcolor={"#111818"}
+            display={"flex"}
+            p={2}
+          >
             <Grid item md={4} xs={12} pb={4}>
-              <Box display={'flex'} pt={{lg:3,md:1,xs:2}}  mt={{lg:5,md:2,xs:3}} textAlign={{md:'left',xs:'center'}}>
-                <Image src={'https://i.ibb.co/VW6f97N/youtubeiconagentpage-transformed.png'} alt="" width={60} height={50} />
-                <Typography variant="h5" color={'white'} display={'inline-block'} textAlign={{md:'left',xs:'center'}} pl={2}><b> ADDITIONAL <br/> VIDEO GUIDES</b></Typography>
+              <Box
+                display={"flex"}
+                pt={{ lg: 3, md: 1, xs: 2 }}
+                mt={{ lg: 5, md: 2, xs: 3 }}
+                textAlign={{ md: "left", xs: "center" }}
+              >
+                <Image
+                  src={
+                    "https://i.ibb.co/VW6f97N/youtubeiconagentpage-transformed.png"
+                  }
+                  alt=""
+                  width={60}
+                  height={50}
+                />
+                <Typography
+                  variant="h5"
+                  color={"white"}
+                  display={"inline-block"}
+                  textAlign={{ md: "left", xs: "center" }}
+                  pl={2}
+                >
+                  <b>
+                    {" "}
+                    ADDITIONAL <br /> VIDEO GUIDES
+                  </b>
+                </Typography>
               </Box>
             </Grid>
-           
-            <Grid item md={2} xs={12} pb={2} pt={2} textAlign={'center'} >
-              <Image src={'https://i.ibb.co/vzvw2Tb/connectpc.png'} width={263} height={152} alt=""/>
+
+            <Grid item md={2} xs={12} pb={2} pt={2} textAlign={"center"}>
+              <Link
+                target={"_blank"}
+                href="https://www.youtube.com/watch?v=xXtgn4Hy-68&ab_channel=StudyVillage"
+              >
+                <Image
+                  src={"https://i.ibb.co/Lt4VgWQ/connectpc.png"}
+                  width={263}
+                  height={152}
+                  alt=""
+                />
+              </Link>
             </Grid>
-            <Grid item md={2} xs={12} pb={2} pt={2} textAlign={'center'} >
-              <Image src={'https://i.ibb.co/7j5TLLL/sspc.png'} width={263} height={152} alt=""/>
+            <Grid item md={2} xs={12} pb={2} pt={2} textAlign={"center"}>
+              <Link
+                target={"_blank"}
+                href="https://www.youtube.com/watch?v=4zbBSVJPtxc&ab_channel=StudyVillage"
+              >
+                <Image
+                  src={"https://i.ibb.co/ZGBcKnL/sspc.png"}
+                  width={263}
+                  height={152}
+                  alt=""
+                />
+              </Link>
             </Grid>
-            <Grid item md={2} xs={12} pb={2} pt={2} textAlign={'center'} >
-              <Image src={'https://i.ibb.co/ccz95SM/surveyspc.png'} width={263} height={152} alt=""/>
+            <Grid item md={2} xs={12} pb={2} pt={2} textAlign={"center"}>
+              <Link
+                target={"_blank"}
+                href="https://www.youtube.com/watch?v=mMtTr2Rr4Ew&ab_channel=StudyVillage"
+              >
+                <Image
+                  src={"https://i.ibb.co/NpW8NBW/surveyspc.png"}
+                  width={263}
+                  height={152}
+                  alt=""
+                />
+              </Link>
             </Grid>
-            <Grid item md={2} xs={12} pb={2} pt={2} textAlign={'center'} >
-              <Image src={'https://i.ibb.co/vhvJCPh/openhourspc.png'} width={263} height={152} alt=""/>
+            <Grid item md={2} xs={12} pb={2} pt={2} textAlign={"center"}>
+              <Link
+                target={"_blank"}
+                href="https://www.youtube.com/watch?v=FQ-pjTlOHDY&ab_channel=StudyVillage"
+              >
+                <Image
+                  src={"https://i.ibb.co/qkDJgnk/openhourspc.png"}
+                  width={263}
+                  height={152}
+                  alt=""
+                />
+              </Link>
             </Grid>
           </Grid>
-          </Box>
+        </Box>
       </Box>
     </>
   );
