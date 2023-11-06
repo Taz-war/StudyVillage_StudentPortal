@@ -11,7 +11,7 @@ import {
   styled,
 } from "@mui/material";
 import { useContext } from "react";
-import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
+import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
 import MainMenu from "../../components/MainMenu";
 import { StateContex } from "../Context/StateProvider";
 import { useState } from "react";
@@ -19,7 +19,6 @@ import TaskAltOutlinedIcon from "@mui/icons-material/TaskAltOutlined";
 import Link from "next/link";
 import Image from "next/image";
 import ArrowForwardIosRoundedIcon from "@mui/icons-material/ArrowForwardIosRounded";
-
 
 // import MABECSlogo from "../../public/student_assets/learning-assets/MABECSlogo.PNG";
 // import useTrackedStore from "../../../store/useTrackedStore";
@@ -49,7 +48,7 @@ const Hello_Brian = () => {
       sx={{ backgroundColor: "#121F28" }}
     >
       <Box sx={{ backgroundColor: "#121F28" }} height={"32vh"}>
-      <Grid container columns={12} zIndex={1}>
+        <Grid container columns={12} zIndex={1}>
           <Grid
             item
             lg={7}
@@ -63,7 +62,7 @@ const Hello_Brian = () => {
           >
             <Link href={"/HomePage"}>
               <Image
-                src={'https://i.ibb.co/SBgmb10/Study-Village-Logo.png'}
+                src={"https://i.ibb.co/SBgmb10/Study-Village-Logo.png"}
                 alt=""
                 width={200}
                 height={200}
@@ -71,20 +70,21 @@ const Hello_Brian = () => {
               />
             </Link>
           </Grid>
-          <Grid item lg={2} md={2} xs={3} pt={{sm:6,xs:4}} >
+          <Grid item lg={2} md={2} xs={3} pt={{ sm: 6, xs: 4 }}>
             <Typography
               // variant={{ lg: "h1", md: "h1", sm: "h4", xs: "h4" }}
-              fontSize={{sm:'23px',xs:'15px'}}
-              color={"white"} fontStyle={'italic'}
-              fontWeight={'bolder'}
+              fontSize={{ sm: "23px", xs: "15px" }}
+              color={"white"}
+              fontStyle={"italic"}
+              fontWeight={"bolder"}
             >
-                Brian Lara <br />
+              Brian Lara <br />
             </Typography>
             <Typography
               variant="p"
               color={"#C5D512"}
-              fontStyle={'italic'}
-              fontWeight={'bolder'}
+              fontStyle={"italic"}
+              fontWeight={"bolder"}
               fontSize={{
                 lg: "20px",
                 md: "15px",
@@ -95,12 +95,23 @@ const Hello_Brian = () => {
               La Trobe University <br /> #6789
             </Typography>
           </Grid>
-          <Grid item lg={1} md={2} sm={2} xs={2} pt={3} mt={1} textAlign={"center"}>
-            <Box
-              width={"100%"}
-              textAlign={"center"}
-            >
-              <Image src={'https://i.ibb.co/bQF1RLb/Brian-Lara-Avatar-I-1.png'} alt="" width={150} height={150} />
+          <Grid
+            item
+            lg={1}
+            md={2}
+            sm={2}
+            xs={2}
+            pt={3}
+            mt={1}
+            textAlign={"center"}
+          >
+            <Box width={"100%"} textAlign={"center"}>
+              <Image
+                src={"https://i.ibb.co/bQF1RLb/Brian-Lara-Avatar-I-1.png"}
+                alt=""
+                width={150}
+                height={150}
+              />
             </Box>
           </Grid>
           <Grid
@@ -151,8 +162,26 @@ const Hello_Brian = () => {
             marginRight: 30,
           }}
         >
-          <i>Hello <span style={{color:'#C5D512'}}>Brian</span></i>
+          <i>
+            Hello <span style={{ color: "#C5D512" }}>Brian</span>
+          </i>
         </h2>
+        <Box sx={{mt:2,ml:2,p:2}}>
+
+        <Typography variant="p" textAlign={'left'}>
+            The Next event/task below spells out your next event in your
+            StudyVillage program. Sometimes these stages require your action -
+            for example once a semester you're asked to complete the
+            StudyVillage Survey. But usually, the description below will simply
+            describe what is happening next, and the rough date the interaction
+            with your student supporter should occur. The accompanying video
+            button links to a short video about that stage, and the PDF icon
+            will take you to a written description if you’d like the detail
+            about what to expect. Remember, if you’d like to make an Open hours
+            meeting with your supporter, click the button below. (And of course,
+            there’s a video explaining what that’s about too!)
+          </Typography>
+        </Box>
         <Box
           sx={{
             height: { lg: 120, md: 120, sm: 150, xs: 320 },
@@ -168,6 +197,7 @@ const Hello_Brian = () => {
             pl: { sm: 2, xs: 2 },
           }}
         >
+          
           <Grid
             container
             lg={12}
@@ -193,7 +223,7 @@ const Hello_Brian = () => {
                     fontWeight={"bold"}
                     pl={2.5}
                     p={0.6}
-                    style={{paddingLeft:"10px"}}
+                    style={{ paddingLeft: "10px" }}
                   >
                     Event/task
                   </Typography>
@@ -211,7 +241,7 @@ const Hello_Brian = () => {
                     border: "1px solid skyblue",
                     justifyContent: "flex-start",
                     "&:hover": {
-                      backgroundColor:'transparent',
+                      backgroundColor: "transparent",
                     },
                   }}
                   onClick={() => {
@@ -242,7 +272,7 @@ const Hello_Brian = () => {
                     fontWeight={"bold"}
                     pl={2.5}
                     p={0.6}
-                    style={{paddingLeft:"10px"}}
+                    style={{ paddingLeft: "10px" }}
                   >
                     Complete by (date)
                   </Typography>
@@ -299,7 +329,7 @@ const Hello_Brian = () => {
                     fontWeight={"bold"}
                     pl={2.5}
                     p={0.6}
-                    style={{paddingLeft:"10px"}}
+                    style={{ paddingLeft: "10px" }}
                   >
                     Info
                   </Typography>
@@ -344,27 +374,79 @@ const Hello_Brian = () => {
             <Grid item lg={3} md={0} sm={0} xs={0}></Grid>
           </Grid>
         </Box>
-        <Grid container columns={12} maxWidth={'1150px'} columnSpacing={2} mt={3} ml={2}>
+        <Grid
+          container
+          columns={12}
+          maxWidth={"1150px"}
+          columnSpacing={2}
+          mt={3}
+          ml={2}
+        >
           <Grid item md={6}>
-            <Typography variant="h5" ml={4} fontWeight={"bolder"} color={'white'} >
-              YOUR PROGRAM 
+            <Typography
+              variant="h5"
+              ml={4}
+              fontWeight={"bolder"}
+              color={"white"}
+            >
+              YOUR PROGRAM
             </Typography>
             <Grid container columns={12} columnSpacing={2} mt={2}>
-              <Grid item md={6} textAlign={'center'}>
-                <Image src={'https://i.ibb.co/1XMM44X/WheelsEC.png'} alt="" width={250} height={250}/>
-                <Typography variant="h5" textAlign={'center'} fontWeight={"bolder"} color={'white'} mt={2}>ELICOS</Typography>
+              <Grid item md={6} textAlign={"center"}>
+                <Image
+                  src={"https://i.ibb.co/1XMM44X/WheelsEC.png"}
+                  alt=""
+                  width={250}
+                  height={250}
+                />
+                <Typography
+                  variant="h5"
+                  textAlign={"center"}
+                  fontWeight={"bolder"}
+                  color={"white"}
+                  mt={2}
+                >
+                  ELICOS
+                </Typography>
               </Grid>
-              <Grid item md={6} textAlign={'center'}>
-                <Image src={'https://i.ibb.co/NnWVThs/Wheels6.png'} alt="" width={250} height={250}/>
-                <Typography variant="h5" textAlign={'center'} fontWeight={"bolder"} color={'white'} mt={2}>AWARD</Typography>
+              <Grid item md={6} textAlign={"center"}>
+                <Image
+                  src={"https://i.ibb.co/NnWVThs/Wheels6.png"}
+                  alt=""
+                  width={250}
+                  height={250}
+                />
+                <Typography
+                  variant="h5"
+                  textAlign={"center"}
+                  fontWeight={"bolder"}
+                  color={"white"}
+                  mt={2}
+                >
+                  AWARD
+                </Typography>
               </Grid>
             </Grid>
           </Grid>
-          <Grid item md={6} textAlign={'center'}>
+          <Grid item md={6} textAlign={"center"}>
             <Box mb={3} mt={4}>
-            <Button variant="contained" sx={{bgcolor:'#004AAD',color:'white','& .hover':{bgcolor:'#004AAD',color:'white'}}}>Book an open hours meeting</Button>
+              <Button
+                variant="contained"
+                sx={{
+                  bgcolor: "#004AAD",
+                  color: "white",
+                  "& .hover": { bgcolor: "#004AAD", color: "white" },
+                }}
+              >
+                Book an open hours meeting
+              </Button>
             </Box>
-            <Image src={'https://i.ibb.co/MN8YdXk/openhourspc-1.png'} alt="" width={280} height={175}/>
+            <Image
+              src={"https://i.ibb.co/MN8YdXk/openhourspc-1.png"}
+              alt=""
+              width={280}
+              height={175}
+            />
           </Grid>
         </Grid>
       </Box>
