@@ -13,14 +13,14 @@ import {
   tableCellClasses,
 } from "@mui/material";
 import React from "react";
-import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
+import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
 import MainMenu from "../../components/MainMenu";
 import { useState } from "react";
 import { StateContex } from "../Context/StateProvider";
 import { useContext } from "react";
 import Link from "next/link";
 import Image from "next/image";
-
+import { useRef } from "react";
 
 let datas = [
   { api_name: "First Name", field: "Brian" },
@@ -36,7 +36,7 @@ let datas = [
   { api_name: "Award Program", field: "AP8" },
 ];
 
-let GuardianProfile= [
+let GuardianProfile = [
   { api_name: "First Name", field: "Brian" },
   { api_name: "Last Name", field: "Lara" },
   { api_name: "Gender", field: "Male" },
@@ -44,14 +44,14 @@ let GuardianProfile= [
   { api_name: "Mobile/Cell Whatsapp Number", field: "+61 411 251 535" },
   { api_name: "Home Address", field: "27 Sanders Rd Frankston, Victoria" },
 ];
-let GuardianProfile2= [
-    { api_name: "First Name", field: "Brian" },
-    { api_name: "Last Name", field: "Lara" },
-    { api_name: "Gender", field: "Male" },
-    { api_name: "Email address", field: "blara@wicricket.org" },
-    { api_name: "Mobile/Cell Whatsapp Number", field: "+61 411 251 535" },
-    { api_name: "Home Address", field: "27 Sanders Rd Frankston, Victoria" },
-  ];
+let GuardianProfile2 = [
+  { api_name: "First Name", field: "Brian" },
+  { api_name: "Last Name", field: "Lara" },
+  { api_name: "Gender", field: "Male" },
+  { api_name: "Email address", field: "blara@wicricket.org" },
+  { api_name: "Mobile/Cell Whatsapp Number", field: "+61 411 251 535" },
+  { api_name: "Home Address", field: "27 Sanders Rd Frankston, Victoria" },
+];
 
 const keys = Object.keys(datas);
 const Your_profile = () => {
@@ -60,8 +60,21 @@ const Your_profile = () => {
   const [editGuardianProfile, setEditGuardianProfile] = useState(false);
   const [editGuardian2, setEditGuardian2] = useState(false);
   const [inputField, setInputFeild] = useState(datas);
-  const [guardianProfile,setGuardianProfile]=useState(GuardianProfile)
-  const [guardian2,setGuardian2]=useState(GuardianProfile2)
+  const [guardianProfile, setGuardianProfile] = useState(GuardianProfile);
+  const [guardian2, setGuardian2] = useState(GuardianProfile2);
+  const [image, setImage] = useState("");
+  const [loader,setLoader] =useState(false)
+  const inputRef = useRef(null);
+
+  const handleImageClick = () => {
+    inputRef.current.click();
+  };
+
+  const handleImageChange = (e) => {
+    setLoader(true)
+    const file = e.target.files[0];
+    setImage(file);
+  };
 
   const handleProfileUpdate = (e, i) => {
     const tempData = datas;
@@ -92,7 +105,7 @@ const Your_profile = () => {
       }}
     >
       <Box sx={{ backgroundColor: "#121F28" }} height={"20vh"}>
-      <Grid container columns={12} zIndex={1}>
+        <Grid container columns={12} zIndex={1}>
           <Grid
             item
             lg={7}
@@ -106,7 +119,7 @@ const Your_profile = () => {
           >
             <Link href={"/HomePage"}>
               <Image
-                src={'https://i.ibb.co/SBgmb10/Study-Village-Logo.png'}
+                src={"https://i.ibb.co/SBgmb10/Study-Village-Logo.png"}
                 alt=""
                 width={200}
                 height={200}
@@ -114,20 +127,21 @@ const Your_profile = () => {
               />
             </Link>
           </Grid>
-          <Grid item lg={2} md={2} xs={3} pt={{sm:6,xs:4}} >
+          <Grid item lg={2} md={2} xs={3} pt={{ sm: 6, xs: 4 }}>
             <Typography
               // variant={{ lg: "h1", md: "h1", sm: "h4", xs: "h4" }}
-              fontSize={{sm:'23px',xs:'15px'}}
-              color={"white"} fontStyle={'italic'}
-              fontWeight={'bolder'}
+              fontSize={{ sm: "23px", xs: "15px" }}
+              color={"white"}
+              fontStyle={"italic"}
+              fontWeight={"bolder"}
             >
-                Brian Lara <br />
+              Brian Lara <br />
             </Typography>
             <Typography
               variant="p"
               color={"#C5D512"}
-              fontStyle={'italic'}
-              fontWeight={'bolder'}
+              fontStyle={"italic"}
+              fontWeight={"bolder"}
               fontSize={{
                 lg: "20px",
                 md: "15px",
@@ -138,12 +152,23 @@ const Your_profile = () => {
               La Trobe University <br /> #6789
             </Typography>
           </Grid>
-          <Grid item lg={1} md={2} sm={2} xs={2} pt={3} mt={1} textAlign={"center"}>
-            <Box
-              width={"100%"}
-              textAlign={"center"}
-            >
-              <Image src={'https://i.ibb.co/bQF1RLb/Brian-Lara-Avatar-I-1.png'} alt="" width={150} height={150} />
+          <Grid
+            item
+            lg={1}
+            md={2}
+            sm={2}
+            xs={2}
+            pt={3}
+            mt={1}
+            textAlign={"center"}
+          >
+            <Box width={"100%"} textAlign={"center"}>
+              <Image
+                src={"https://i.ibb.co/bQF1RLb/Brian-Lara-Avatar-I-1.png"}
+                alt=""
+                width={150}
+                height={150}
+              />
             </Box>
           </Grid>
           <Grid
@@ -184,9 +209,14 @@ const Your_profile = () => {
 
         <Box display={"flex"}>
           <Box width={"100%"} maxWidth={"850px"} pt={3}>
-            <Typography variant="p" textAlign={"left"} fontSize={"large"} color={'white'}>
-              We have the following information on record. Please keep
-              this information up to date so we can stay in touch.{" "}
+            <Typography
+              variant="p"
+              textAlign={"left"}
+              fontSize={"large"}
+              color={"white"}
+            >
+              We have the following information on record. Please keep this
+              information up to date so we can stay in touch.{" "}
             </Typography>
             <TableContainer sx={{ mt: 3 }}>
               <Table
@@ -203,7 +233,7 @@ const Your_profile = () => {
                     inputField.map((data, index) => {
                       return (
                         <TableRow
-                        key={index}
+                          key={index}
                           className="cellColor"
                           style={{
                             overflow: "hidden",
@@ -259,7 +289,13 @@ const Your_profile = () => {
               <i>{editProfile === false ? "Edit Profile" : "Submit details"}</i>
             </Button>
 
-            <Typography variant="h5" fontWeight={"bolder"} fontStyle={'italic'} color={'white'} mt={3}>
+            <Typography
+              variant="h5"
+              fontWeight={"bolder"}
+              fontStyle={"italic"}
+              color={"white"}
+              mt={3}
+            >
               Parent/Guardian (1) details in home country
             </Typography>
             <TableContainer sx={{ mt: 3 }}>
@@ -277,7 +313,7 @@ const Your_profile = () => {
                     guardianProfile.map((data, index) => {
                       return (
                         <TableRow
-                        key={index}
+                          key={index}
                           className="cellColor"
                           style={{
                             overflow: "hidden",
@@ -294,7 +330,10 @@ const Your_profile = () => {
                               <TextField
                                 defaultValue={data.field}
                                 onChange={(e) => {
-                                  handleGuardianProfileUpdate(e.target.value, index);
+                                  handleGuardianProfileUpdate(
+                                    e.target.value,
+                                    index
+                                  );
                                 }}
                                 sx={{
                                   backgroundColor: "white",
@@ -330,10 +369,20 @@ const Your_profile = () => {
                 },
               }}
             >
-              <i>{editGuardianProfile === false ? "Edit Guardian Profile" : "Submit details"}</i>
+              <i>
+                {editGuardianProfile === false
+                  ? "Edit Guardian Profile"
+                  : "Submit details"}
+              </i>
             </Button>
 
-            <Typography variant="h5" fontWeight={"bolder"} color={'white'}  fontStyle={'italic'} mt={3}>
+            <Typography
+              variant="h5"
+              fontWeight={"bolder"}
+              color={"white"}
+              fontStyle={"italic"}
+              mt={3}
+            >
               Parent/Guardian (2) details in home country
             </Typography>
             <TableContainer sx={{ mt: 3 }}>
@@ -351,7 +400,7 @@ const Your_profile = () => {
                     guardian2.map((data, index) => {
                       return (
                         <TableRow
-                        key={index}
+                          key={index}
                           className="cellColor"
                           style={{
                             overflow: "hidden",
@@ -404,17 +453,38 @@ const Your_profile = () => {
                 },
               }}
             >
-              <i>{editGuardian2 === false ? "Edit Guardian Profile" : "Submit details"}</i>
+              <i>
+                {editGuardian2 === false
+                  ? "Edit Guardian Profile"
+                  : "Submit details"}
+              </i>
             </Button>
           </Box>
           <Box ml={4} mt={8} p={5} pl={7}>
-            <Image src={'https://i.ibb.co/Zc4LskV/Brian-Lara.png'} alt="" width={236} height={313}/>
+            {/* {loader && <Typography>Loading....</Typography>} */}
+            {image ? (
+              <Image
+                src={URL.createObjectURL(image)}
+                alt=""
+                width={236}
+                height={313}
+              />
+            ) : (
+              <Image
+                src={"https://i.ibb.co/Zc4LskV/Brian-Lara.png"}
+                alt=""
+                width={236}
+                height={313}
+              />
+            )}
+
             <Button
               variant="contained"
               onClick={() => {
-                editProfile === false
-                  ? setEditProfile(true)
-                  : setEditProfile(false);
+                // editProfile === false
+                //   ? setEditProfile(true)
+                //   : setEditProfile(false);
+                handleImageClick();
               }}
               sx={{
                 mt: 3,
@@ -429,6 +499,12 @@ const Your_profile = () => {
             >
               <i>{editProfile === false ? "Edit Photo" : "Submit Photo"}</i>
             </Button>
+            <input
+              type="file"
+              ref={inputRef}
+              onChange={handleImageChange}
+              style={{ display: "none" }}
+            />
           </Box>
         </Box>
       </Box>
